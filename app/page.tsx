@@ -700,9 +700,16 @@ return (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
-                <Globe className="h-8 w-8 text-blue-400" />
-                <span className="ml-2 text-xl font-bold">Googlify Technologies</span>
-              </div>
+  <Image
+    src="/favicon.png"
+    alt="Googlify Logo"
+    width={40}
+    height={40}
+    className="mr-3 drop-shadow-md"
+  />
+  <span className="text-xl font-bold">Googlify Technologies</span>
+</div>
+
               <p className="text-gray-400 mb-4">
                 Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative solutions.
               </p>
