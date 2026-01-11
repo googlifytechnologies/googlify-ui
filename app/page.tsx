@@ -427,7 +427,7 @@ return (
         {/* Backend */}
         <div className="bg-[#111827] p-4 rounded-xl border border-white/10 hover:border-green-500/40 transition-all">
           <p className="font-semibold text-white">Backend</p>
-          <p className="text-sm text-gray-400">Node.js, Python, Go</p>
+          <p className="text-sm text-gray-400">Java, Spring Boot, RestAPIs</p>
         </div>
 
         {/* Database */}
