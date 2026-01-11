@@ -570,46 +570,68 @@ return (
         Get a Free Quote
       </h2>
 
-      <form className="space-y-4">
+      <form 
+  action="https://api.web3forms.com/submit" 
+  method="POST"
+  className="space-y-4"
+>
+  {/* REQUIRED */}
+  <input type="hidden" name="access_key" value="c1650327-16f7-4536-a4b9-fee7005cbb50" />
 
-        <input
-          type="text"
-          placeholder="Full Name"
-          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
-        />
+  {/* OPTIONAL: email where you want to receive form submissions */}
+  <input type="hidden" name="email_to" value="googlifytechnologies@gmail.com" />
 
-        <input
-          type="email"
-          placeholder="Email Address"
-          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
-        />
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    className="w-full p-3 bg-white/10 text-white rounded-xl outline-none"
+    required
+  />
 
-        <input
-          type="text"
-          placeholder="Phone Number"
-          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
-        />
+  <input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    className="w-full p-3 bg-white/10 text-white rounded-xl outline-none"
+    required
+  />
 
-        <select className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20">
-          <option className="text-black">Website Development</option>
-          <option className="text-black">Backend Development</option>
-          <option className="text-black">Full-Stack Project</option>
-          <option className="text-black">Mobile App</option>
-          <option className="text-black">Branding / Logo</option>
-          <option className="text-black">Other</option>
-        </select>
+  <input
+    type="text"
+    name="phone"
+    placeholder="Phone Number"
+    className="w-full p-3 bg-white/10 text-white rounded-xl outline-none"
+    required
+  />
 
-        <textarea
-          rows={4}
-          placeholder="Tell us about your project..."
-          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
-        />
+  <select
+    name="service"
+    className="w-full p-3 bg-white/10 text-white rounded-xl outline-none"
+  >
+    <option className="text-black">Website Development</option>
+    <option className="text-black">Backend Development</option>
+    <option className="text-black">Full Stack Project</option>
+    <option className="text-black">Mobile App</option>
+    <option className="text-black">Branding & Logo</option>
+    <option className="text-black">Other</option>
+  </select>
 
-        <button className="w-full py-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl text-lg font-semibold hover:opacity-90">
-          Submit Request
-        </button>
+  <textarea
+    name="message"
+    rows={4}
+    placeholder="Tell us about your project..."
+    className="w-full p-3 bg-white/10 text-white rounded-xl outline-none"
+  ></textarea>
 
-      </form>
+  <button
+    type="submit"
+    className="w-full py-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl text-lg font-semibold"
+  >
+    Submit Request
+  </button>
+</form>
+
     </div>
   </div>
 )}
