@@ -701,7 +701,7 @@ return (
             <div className="md:col-span-2">
               <div className="flex items-center mb-4">
   <Image
-    src="/favicon.png"
+    src="/herotxt.png"
     alt="Googlify Logo"
     width={40}
     height={40}
