@@ -9,6 +9,9 @@ import Image from "next/image";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [quoteOpen, setQuoteOpen] = useState(false);
+  
+
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -19,6 +22,14 @@ export default function Home() {
   };
 return (
   <div className="min-h-screen bg-[#0b0f19] text-white">
+    {/* Floating GET QUOTE Button */}
+<button
+  onClick={() => setQuoteOpen(true)}
+  className="fixed bottom-6 right-6 z-[999] bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-3 rounded-full shadow-xl hover:scale-105 transition-transform flex items-center gap-2"
+>
+  Get Quote
+</button>
+
     
     {/* NAVBAR */}
     <nav className="fixed top-0 w-full bg-[#111827]/80 backdrop-blur-xl z-50 border-b border-white/10 shadow-lg">
@@ -541,6 +552,68 @@ return (
     </div>
   </div>
 </section>
+
+{/* GET QUOTE MODAL */}
+{quoteOpen && (
+  <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[9999] flex justify-center items-center p-4">
+    <div className="bg-[#111827] border border-white/10 rounded-2xl p-8 w-full max-w-lg relative shadow-2xl">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setQuoteOpen(false)}
+        className="absolute top-4 right-4 text-gray-400 hover:text-white"
+      >
+        <X className="h-6 w-6" />
+      </button>
+
+      <h2 className="text-3xl font-bold text-center mb-6 bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400 text-transparent bg-clip-text">
+        Get a Free Quote
+      </h2>
+
+      <form className="space-y-4">
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
+        />
+
+        <input
+          type="text"
+          placeholder="Phone Number"
+          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
+        />
+
+        <select className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20">
+          <option className="text-black">Website Development</option>
+          <option className="text-black">Backend Development</option>
+          <option className="text-black">Full-Stack Project</option>
+          <option className="text-black">Mobile App</option>
+          <option className="text-black">Branding / Logo</option>
+          <option className="text-black">Other</option>
+        </select>
+
+        <textarea
+          rows={4}
+          placeholder="Tell us about your project..."
+          className="w-full p-3 bg-white/10 text-white rounded-xl outline-none focus:bg-white/20"
+        />
+
+        <button className="w-full py-3 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl text-lg font-semibold hover:opacity-90">
+          Submit Request
+        </button>
+
+      </form>
+    </div>
+  </div>
+)}
+
 
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
