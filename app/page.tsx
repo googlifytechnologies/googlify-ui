@@ -492,33 +492,50 @@ return (
     </div>
 
     {/* Contact Details */}
-    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-300">
+    <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-10 text-gray-300">
 
-      <div>
-        <h4 className="font-semibold text-lg mb-2 text-white">Email</h4>
-        <p className="text-gray-400">googlifytechnologies@gmail.com</p>
-      </div>
+  {/* EMAIL */}
+  <div className="flex flex-col items-center space-y-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7 text-blue-400">
+      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    <h4 className="font-semibold text-white text-lg">Email</h4>
+    <p className="text-gray-400 text-center">googlifytechnologies@gmail.com</p>
+  </div>
 
-      <div>
-        <h4 className="font-semibold text-lg mb-2 text-white">Phone</h4>
-        <p className="text-gray-400">+91 63888 80784</p>
-      </div>
+  {/* PHONE */}
+  <div className="flex flex-col items-center space-y-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7 text-green-400">
+      <path d="M6.6 10.8c1.2 2.4 3.2 4.4 5.6 5.6l1.9-1.9c.3-.3.8-.4 1.2-.3 1 .3 2 .5 3 .5.7 0 1.2.6 1.2 1.2V20c0 .7-.6 1.2-1.2 1.2C10.5 21.2 2.8 13.5 2.8 4.2 2.8 3.6 3.4 3 4.1 3H7c.7 0 1.2.6 1.2 1.2 0 1 .2 2 .5 3 .1.4 0 .9-.3 1.2l-1.8 1.4z"/>
+    </svg>
+    <h4 className="font-semibold text-white text-lg">Phone</h4>
+    <p className="text-gray-400 text-center">+91 63888 80784</p>
+  </div>
 
-      <div>
-        <h4 className="font-semibold text-lg mb-2 text-white">Location</h4>
-        <p className="text-gray-400">Lucknow, Uttar Pradesh</p>
-      </div>
+  {/* LOCATION */}
+  <div className="flex flex-col items-center space-y-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7 text-yellow-400">
+      <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"/>
+    </svg>
+    <h4 className="font-semibold text-white text-lg">Location</h4>
+    <p className="text-gray-400 text-center">Lucknow, Uttar Pradesh</p>
+  </div>
 
-      <div>
-  <h4 className="font-bold text-lg mb-2">Instagram</h4>
-  <a
-    href="https://www.instagram.com/googlifytrchnologies/"
-    target="_blank"
-    className="text-white/90 hover:text-pink-500 transition-colors"
-  >
-    @googlifytrchnologies
-  </a>
-</div>
+  {/* INSTAGRAM */}
+  <div className="flex flex-col items-center space-y-2">
+    <a href="https://www.instagram.com/googlifytrchnologies/" target="_blank" className="text-gray-300 hover:text-pink-500 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-7 h-7">
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.75a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"/>
+      </svg>
+    </a>
+    <h4 className="font-semibold text-white text-lg">Instagram</h4>
+    <a href="https://www.instagram.com/googlifytrchnologies/" target="_blank" className="text-gray-400 hover:text-pink-500 transition-colors text-center">
+      @googlifytrchnologies
+    </a>
+  </div>
+
+
+
 
 
     </div>
