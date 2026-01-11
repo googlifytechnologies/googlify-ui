@@ -529,8 +529,8 @@ return (
       </svg>
     </a>
     <h4 className="font-semibold text-white text-lg">Instagram</h4>
-    <a href="https://www.instagram.com/googlifytrchnologies/" target="_blank" className="text-gray-400 hover:text-pink-500 transition-colors text-center">
-      @googlifytrchnologies
+    <a href="https://www.instagram.com/googlifytechnologies/" target="_blank" className="text-gray-400 hover:text-pink-500 transition-colors text-center">
+      @googlifytechnologies
     </a>
   </div>
 
