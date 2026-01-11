@@ -433,7 +433,7 @@ return (
         {/* Database */}
         <div className="bg-[#111827] p-4 rounded-xl border border-white/10 hover:border-blue-400/40 transition-all">
           <p className="font-semibold text-white">Database</p>
-          <p className="text-sm text-gray-400">PostgreSQL, MongoDB</p>
+          <p className="text-sm text-gray-400">MySQL, PostgreSQL, MongoDB</p>
         </div>
 
         {/* Cloud */}
