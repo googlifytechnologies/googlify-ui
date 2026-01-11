@@ -509,6 +509,18 @@ return (
         <p className="text-gray-400">Lucknow, Uttar Pradesh</p>
       </div>
 
+      <div>
+  <h4 className="font-bold text-lg mb-2">Instagram</h4>
+  <a
+    href="https://www.instagram.com/googlifytrchnologies/"
+    target="_blank"
+    className="text-white/90 hover:text-pink-500 transition-colors"
+  >
+    @googlifytrchnologies
+  </a>
+</div>
+
+
     </div>
   </div>
 </section>
