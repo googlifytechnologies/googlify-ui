@@ -10,6 +10,8 @@ import Image from "next/image";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [successOpen, setSuccessOpen] = useState(false);
+
   
 
 
@@ -20,6 +22,28 @@ export default function Home() {
       setMobileMenuOpen(false);
     }
   };
+
+  const handleSubmit = async (e: any) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData,
+  });
+
+  const result = await res.json();
+
+  if (result.success) {
+    setQuoteOpen(false);       // close form modal
+    setSuccessOpen(true);      // open success modal
+  } else {
+    alert("Failed to submit. Please try again.");
+  }
+};
+
+
 return (
   <div className="min-h-screen bg-[#0b0f19] text-white">
     {/* Floating GET QUOTE Button */}
@@ -570,11 +594,10 @@ return (
         Get a Free Quote
       </h2>
 
-      <form 
-  action="https://api.web3forms.com/submit" 
-  method="POST"
-  className="space-y-4"
->
+ <form onSubmit={handleSubmit} className="space-y-4">
+
+<input type="hidden" name="redirect" value="false" />
+
   {/* REQUIRED */}
   <input type="hidden" name="access_key" value="c1650327-16f7-4536-a4b9-fee7005cbb50" />
 
@@ -635,6 +658,41 @@ return (
     </div>
   </div>
 )}
+
+{successOpen && (
+  <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[9999] flex justify-center items-center p-4">
+    <div className="bg-[#111827] border border-white/10 rounded-2xl p-8 w-full max-w-md relative shadow-2xl text-center">
+
+      <button
+        onClick={() => setSuccessOpen(false)}
+        className="absolute top-4 right-4 text-gray-400 hover:text-white"
+      >
+        <X className="h-6 w-6" />
+      </button>
+
+      <div className="w-16 h-16 mx-auto mb-4 bg-green-500/20 rounded-full flex items-center justify-center">
+        <CheckCircle className="h-10 w-10 text-green-400" />
+      </div>
+
+      <h2 className="text-3xl font-bold mb-4 text-green-400">
+        Submitted Successfully!
+      </h2>
+
+      <p className="text-gray-300 mb-6">
+        Thank you for contacting us.<br />
+        We’ll get back to you shortly.
+      </p>
+
+      <button
+        onClick={() => setSuccessOpen(false)}
+        className="bg-gradient-to-r from-blue-600 to-green-500 text-white px-6 py-3 rounded-xl shadow-lg hover:opacity-90"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
 
 
       <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
