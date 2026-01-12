@@ -82,6 +82,13 @@ return (
             <button onClick={() => scrollToSection('process')} className="text-gray-300 hover:text-white transition">
               Process
             </button>
+              {/* 👉 NEW: CEO MESSAGE PAGE LINK */}
+  <button
+    onClick={() => (window.location.href = "/ceo")}
+    className="text-gray-300 hover:text-white transition"
+  >
+    CEO Message
+  </button>
             <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-white transition">
               About
             </button>
