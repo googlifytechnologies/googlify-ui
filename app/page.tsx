@@ -121,6 +121,13 @@ return (
             <button onClick={() => scrollToSection('process')} className="block w-full py-2 text-gray-300 hover:text-white">
               Process
             </button>
+            <button
+  onClick={() => (window.location.href = "/ceo")}
+  className="block w-full py-2 text-gray-300 hover:text-white"
+>
+  CEO Message
+</button>
+
             <button onClick={() => scrollToSection('about')} className="block w-full py-2 text-gray-300 hover:text-white">
               About
             </button>
