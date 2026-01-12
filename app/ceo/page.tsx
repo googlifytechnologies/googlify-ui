@@ -163,6 +163,62 @@ export default function CEOPage() {
 
         </div>
       </div>
+      {/* BRANDS & PLATFORMS SECTION (ELEGANT + RESUME BASED) */}
+<div className="max-w-6xl mx-auto text-center mt-28">
+  <h2 className="text-4xl font-bold mb-6">
+    Platforms & Projects I’ve Contributed To
+  </h2>
+
+  <p className="text-gray-400 max-w-3xl mx-auto mb-14 text-lg">
+    Over the past 3 years, I've engineered backend solutions used across telecom, media, 
+    and enterprise applications — improving performance, scalability, and real-world reliability.
+  </p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    {/* Comcast Xfinity Mobile */}
+    <div className="bg-[#111827] p-6 rounded-2xl border border-blue-500/30 hover:border-blue-400/60 transition-all">
+      <h3 className="text-xl font-semibold text-blue-400">Comcast Xfinity Mobile</h3>
+      <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+        Built and maintained backend services for mobile fulfillment workflows. 
+        Integrated FedEx, Assurant & Amdocs systems, reducing processing time by 20%. 
+        Implemented trade-in, notifications & BPMN-based order tracking.
+      </p>
+    </div>
+
+    {/* NBC Universal */}
+    <div className="bg-[#111827] p-6 rounded-2xl border border-purple-500/30 hover:border-purple-400/60 transition-all">
+      <h3 className="text-xl font-semibold text-purple-400">NBC Universal</h3>
+      <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+        Developed backend components for an automated video analysis tool detecting 
+        black-screen errors, subtitle mismatches & playback issues. Improved API 
+        performance by 15% through backend optimizations.
+      </p>
+    </div>
+
+    {/* Fractal (Video Processing Platform) */}
+    <div className="bg-[#111827] p-6 rounded-2xl border border-green-500/30 hover:border-green-400/60 transition-all">
+      <h3 className="text-xl font-semibold text-green-400">Fractal (Video Platform)</h3>
+      <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+        Built entire video-merge microservice — upload, merge, async workflow, 
+        status tracking & output delivery. Improved response times by 30–50% through 
+        DB optimization, caching & service refactoring.
+      </p>
+    </div>
+
+    {/* FOYR + Kerala HRMS (Your actual contributions) */}
+    <div className="bg-[#111827] p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-400/60 transition-all">
+      <h3 className="text-xl font-semibold text-yellow-400">FOYR & Kerala HRMS</h3>
+      <p className="text-gray-400 text-sm mt-3 leading-relaxed">
+        Worked on backend systems powering prop-tech platforms and government HRMS features 
+        like employee filters, transfers, workflow automation & data-driven service modules.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
 
       {/* VISION SECTION */}
       <div className="max-w-5xl mx-auto text-center mt-24">
