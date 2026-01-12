@@ -112,7 +112,7 @@ export default function CEOPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
 
           <div className="bg-[#111827] p-6 rounded-2xl border border-blue-500/40">
-            <h3 className="text-xl font-bold text-blue-400 mb-2">3+ Years Experience</h3>
+            <h3 className="text-xl font-bold text-blue-400 mb-2">4 Years Experience</h3>
             <p className="text-gray-400">
               Skilled in Java, Spring Boot, REST APIs, and scalable backend systems.
             </p>
