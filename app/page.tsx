@@ -176,25 +176,24 @@ return (
           </Button>
         </div>
 
-        {/* Stats */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-blue-500/40">
-            <div className="text-4xl font-bold text-blue-400 mb-2">100+</div>
-            <div className="text-gray-400">Projects Delivered</div>
-          </div>
+       <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+  <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-blue-500/40">
+    <div className="text-4xl font-bold text-blue-400 mb-2">4+ Years</div>
+    <div className="text-gray-400">Professional Experience</div>
+  </div>
 
-          <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-green-500/40">
-            <div className="text-4xl font-bold text-green-400 mb-2">50+</div>
-            <div className="text-gray-400">Happy Clients</div>
-          </div>
+  <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-green-500/40">
+    <div className="text-4xl font-bold text-green-400 mb-2">6+ Projects</div>
+    <div className="text-gray-400">Enterprise Platforms Contributed To</div>
+  </div>
 
-          <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-yellow-500/40">
-            <div className="text-4xl font-bold text-yellow-400 mb-2">24/7</div>
-            <div className="text-gray-400">Support Available</div>
-          </div>
+  <div className="bg-[#111827] p-6 rounded-xl shadow-lg border border-yellow-500/40">
+    <div className="text-4xl font-bold text-yellow-400 mb-2">30–50%</div>
+    <div className="text-gray-400">Performance Improvement Delivered</div>
+  </div>
 
-        </div>
+</div>
 
       </div>
     </section>
